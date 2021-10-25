@@ -23,6 +23,6 @@
 
 ## 公众号：
 
-![微信公众号](../../vx.jpg)
+![微信公众号](https://github.com/phygerr/PyLibrary/blob/main/docs/vx.jpg)
 
 
