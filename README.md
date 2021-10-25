@@ -1,2 +1,27 @@
-# PyLibrary
-most useful python library...
+# 介绍
+
+> 本站点主要介绍那些常用的，好用的Python库。
+> 本站点为个人维护，业余时间进行更新，如果你也有收藏的宝藏库，也欢迎推荐。
+
+---
+
+# 第一阶段计划
+
+[x] 站点搭建，维护，优化
+[] Python流行库库整理推荐
+[] 博客搭建教程
+[] Web开发简明教程
+[] Vue简明教程
+
+---
+
+# 关于
+
+## 邮箱：
+
+<463551098@qq.com>
+
+## 公众号：
+
+![微信公众号](https://images.cnblogs.com/cnblogs_com/phyger/1864462/o_201016034153qrcode_for_gh_8f86fc2ac31a_258.jpg)
+
