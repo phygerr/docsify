@@ -23,6 +23,6 @@
 
 ## 公众号：
 
-![微信公众号](https://gitee.com/phygerr/picture/blob/master/vx.jpg)
+![微信公众号](../../vx.jpg)
 
 
