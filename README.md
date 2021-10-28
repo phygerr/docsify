@@ -23,5 +23,5 @@
 
 ## 公众号：
 
-![微信公众号](https://images.cnblogs.com/cnblogs_com/phyger/1864462/o_201016034153qrcode_for_gh_8f86fc2ac31a_258.jpg)
+![微信公众号](https://gitee.com/phygerr/picture/raw/master/vx.jpg)
 
