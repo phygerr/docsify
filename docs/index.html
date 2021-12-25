@@ -9,20 +9,51 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1/themes/prism-coy.css">
+  <link rel="stylesheet" href="static/css/sidebar-folder.min.css" />
 </head>
 <body>
-  <div id="app"></div>
+  <!-- <nav>
+    <ul>
+      <li>快速入门
+        <ul>
+          <li><a href="#/">Python</a></li>
+          <li><a href="#/">Go</a></li>
+          <li><a href="#/">Vue</a></li>
+          <li><a href="#/">ElementUI+</a></li>
+          <li><a href="#/">else</a></li>
+        </ul>
+      </li>
+
+      <li>关于作者
+        <ul>
+          <li><a href="#/">aaa</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    <a href="#/zh-cn/">快速入门</a>
+  </nav> -->
+  <div id="app">拼命加载中...</div>
+  
   <script>
     window.$docsify = {
 	  // 文档名称
-      name: 'Python常用库',
-      repo: 'https://phyger.tk',
+    name: "Phyger's Doc",
+      //repo: 'https://phyger.tk',
+    mergeNavbar: true,
+    notFoundPage: true,
+    notFoundPage: 'my404.md',
+    homepage: "home.md",
 	  // 封面开关
 	  coverpage: true,
 	  // 多页面开关
 	  loadSidebar: true,
+    // 导航栏开关
+    loadNavbar: true,
 	  // 文章标题在导航栏显示的级别
 	  subMaxLevel: 1,
+    sidebarDisplayLevel: 3,
 	  // 
 	  alias: {'/.*/_sidebar.md': '/_sidebar.md'},
 	  // 切换文章后自动跳到头部
@@ -31,22 +62,44 @@
 	  //logo: 'https://docsify.js.org/_media/icon.svg',
 	  // 搜索默配置
 	  search: {
-		placeholder: {
-        '/': '搜索',
+		  placeholder: {
+        '/': '搜索点这里',
+		  },
+      noData: '￣へ￣ 没有找到匹配的内容...',
 		},
+    count:{
+      countable:true,
+      fontsize:'0.9em',
+      color:'rgb(90,90,90)',
+      language:'chinese'
 		},
-      count:{
-		countable:true,
-		fontsize:'0.9em',
-		color:'rgb(90,90,90)',
-		language:'chinese'
-		},		
+    alias: {
+      '/.*/_sidebar.md': '/_sidebar.md',
+    },
+    plugins: [
+    function(hook) {
+      var footer = [
+        // '<hr/>',
+        '<footer align="center">',
+        '<span><a href="https://phyger.tk">Phyger</a> &copy;2021 | </span>',
+        '<span>本站由<a href="https://github.com/docsifyjs/docsify" target="_blank">Docsify</a>强力驱动</span>',
+        '</footer>'
+      ].join('');
+
+      hook.afterEach(function(html) {
+        return html + footer;
+      });
     }
+  ]	
+  }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- 语法高亮支持 -->
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.js"></script>
   <!-- 搜索插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <!-- 字数统计 -->
@@ -57,5 +110,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <!-- 分页导航插件 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- 导航栏折叠插件 -->
+  
+  <script src="static/js/docsify-sidebar-collapse.min.js"></script>
 </body>
 </html>
